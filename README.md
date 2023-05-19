@@ -43,42 +43,39 @@ git clone https://github.com/RomildoFH/drink-delivery.git
 cd drink-delivery
 ```
 
-3. Instale as dependências do Front-end. Certifique-se de ter o Node.js e o npm (Node Package Manager) instalados. Execute o seguinte comando:
+3. Rode os containers para iniciar a aplicação
 
 ```
-npm install
+docker-compose up -d
 ```
 
-4. Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar o servidor de desenvolvimento do Front-end:
+4. Aguarde até que todos os containers estejam rodando
+
+5. Para verificar se os containers estão saudáveis, utilize:
+
+```
+docker ps
+```
+
+Você deverá ver dois containers: delivery-backend (port 3001) e db (port 3306)
+
+6. Agora, na raiz do projeto você deverá restaurar o banco de dados, para que as tabelas sejam criadas e populadas com os seeders:
+
+```
+npm run db:reset
+```
+
+7. Após a execução do comando anterior, você deve startar a aplicação para utiliza-la no browser:
 
 ```
 npm start
 ```
+Esse processo poderá levar cerca de 2 minutos ou mais.
 
-5. Agora, abra uma nova janela do terminal e acesse o diretório "backend" dentro do diretório do projeto:
-
-```
-cd backend
-```
-
-6. Instale as dependências do Back-end usando o seguinte comando:
+8. Uma aba no navegador será aberta, e você poderá utilizar a aplicação. Caso contrário poderá acessar através da seguinte url:
 
 ```
-npm install
-```
-
-7. Após a conclusão da instalação das dependências, execute o seguinte comando para iniciar o servidor de desenvolvimento do Back-end:
-
-```
-npm start
-```
-
-8. O Drink Delivery está agora instalado e em execução em sua máquina local. Você pode acessar a aplicação abrindo o seu navegador e digitando a seguinte URL:
-
-```
-http://localhost:3000
-```
-
-Certifique-se de ter o MySQL instalado e configurado corretamente para que o Back-end possa se conectar ao banco de dados. Consulte a documentação do MySQL para obter mais informações sobre a instalação e configuração.
+http://localhost:3000/login
+´´´
 
 Agora você está pronto para explorar e utilizar o Drink Delivery em sua máquina local.
