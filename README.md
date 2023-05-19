@@ -76,6 +76,24 @@ Esse processo poderá levar cerca de 2 minutos ou mais.
 
 ```
 http://localhost:3000/login
-´´´
+```
 
 Agora você está pronto para explorar e utilizar o Drink Delivery em sua máquina local.
+
+## Tecnologias Utilizadas
+
+O projeto do Drink Delivery foi desenvolvido utilizando as seguintes tecnologias:
+
+- **Front-end:**
+  - React.js
+  - JavaScript
+  - Tailwind CSS
+  - Jest
+
+- **Back-end:**
+  - Node.js
+  - Express.js
+  - MySQL
+  - JWT (JSON Web Tokens)
+  - Chai
+
