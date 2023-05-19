@@ -4,6 +4,16 @@ O Drink Delivery é uma aplicação web desenvolvida por Romildo Silva e Weliton
 
 Para alcançar esse objetivo, adotamos uma abordagem de divisão de tarefas e utilizamos metodologias ágeis durante o desenvolvimento. Além disso, enfatizamos a realização de testes rigorosos para garantir a qualidade e o funcionamento correto de todas as funcionalidades planejadas.
 
+## Tabela de Conteúdo 
+
+- [Sobre o Projeto](#sobre)
+- [Utilização](#utilizacao)
+- [Instalação](#instalacao)
+- [Tecnologias Utilizadas](#tecnologias)
+- [Contato](#contato)
+
+## Sobre o projeto <span id="sobre"></span>
+
 ### Front-end
 
 No desenvolvimento do Front-end, utilizamos principalmente as seguintes tecnologias: React.js, JavaScript, Tailwind CSS e Jest. Nessa parte do projeto, concentramos nossos esforços na criação das telas de login, registro, produtos, checkout, acompanhamento do pedido, tela de pedidos e gerenciamento de usuários. Cada tela é renderizada com base na função do usuário, que é validada pelo back-end da aplicação.
@@ -14,7 +24,8 @@ Para o Back-end, optamos por utilizar as seguintes tecnologias: Node.js, Express
 
 Esperamos que o Drink Delivery seja uma solução eficaz para os usuários, proporcionando uma experiência agradável ao solicitar suas bebidas preferidas. Estamos orgulhosos do trabalho realizado e esperamos continuar aprimorando e expandindo essa aplicação no futuro.
 
-## Utilizando a aplicação
+
+## Utilizando a aplicação <span id="utilizacao"></span>
 
 1. Acesse o site onde a aplicação foi públicada:
 
@@ -29,7 +40,7 @@ https://drink-delivery.vercel.app/
 
 
 
-## Instalando localmente
+## Instalando localmente <span id="instalacao"></span>
 
 1. Clone o repositório do Drink Delivery do GitHub para o seu ambiente de desenvolvimento:
 
@@ -80,7 +91,7 @@ http://localhost:3000/login
 
 Agora você está pronto para explorar e utilizar o Drink Delivery em sua máquina local.
 
-## Tecnologias Utilizadas
+## Tecnologias Utilizadas <span id="tecnologias"></span>
 
 O projeto do Drink Delivery foi desenvolvido utilizando as seguintes tecnologias:
 
@@ -97,3 +108,9 @@ O projeto do Drink Delivery foi desenvolvido utilizando as seguintes tecnologias
   - JWT (JSON Web Tokens)
   - Chai
 
+## Contato
+Você pode entrar em contato conosco através dos seguintes contatos:
+
+Romildo Silva: https://www.linkedin.com/in/this-romildo/
+<br></br>
+Weliton Lima: https://www.linkedin.com/in/weliton-lima/
