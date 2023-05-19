@@ -9,8 +9,8 @@ function AppProvider({ children }) {
   const [products, setProducts] = useState([]);
   const [userData, setUserData] = useLocalStorage('user', {});
   const [fields, setFormFields] = useForm({
-    email: '',
-    password: '',
+    email: 'zebirita@email.com',
+    password: '$#zebirita#$',
     name: '',
     role: '',
   });
