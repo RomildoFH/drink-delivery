@@ -7,6 +7,7 @@ const options = {
   username: process.env.PGUSER,
   password: process.env.PGPASSWORD,
   dialect: 'postgres',
+  use_env_variable: process.env.DATABASE_URL,
   define: {
     timestamps: true,
   },
