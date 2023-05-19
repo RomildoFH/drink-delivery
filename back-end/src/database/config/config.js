@@ -12,4 +12,8 @@ const options = {
     timestamps: true,
   },
 };
-module.exports = options;
+module.exports = {
+  production: {
+    ...options,
+  },
+};
