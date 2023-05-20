@@ -9,7 +9,6 @@
   "private": true,
   "scripts": {
     "start": "react-scripts start",
-    "start:build": "PORT=3000 ./node_modules/.bin/serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test --runInBand --detectOpenHandles --verbose",
     "test:coverage": "react-scripts test --coverage --watchAll=false",
