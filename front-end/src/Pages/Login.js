@@ -8,12 +8,17 @@ import routes from '../json/routes.json';
 import takeaway from '../images/gifs/takeaway.gif';
 import LoginForm from '../components/LoginForm';
 import logo from '../images/logo-remove.png';
+import useForm from '../hooks/useForm';
 
 function Login() {
-  const { fields, setFormFields, userData, setUserData } = useContext(AppContext);
+  const { userData, setUserData } = useContext(AppContext);
   const [isValid, setIsValid] = useState(false);
   const [isLogged, setIsLogged] = useState(false);
   const [unauthorized, changeAuthorized] = useState(false);
+  const [fields, setFormFields] = useForm({
+    email: 'zebirita@email.com',
+    password: '$#zebirita#$',
+  });
 
   const login = async (e) => {
     e.preventDefault();
@@ -50,18 +55,18 @@ function Login() {
     history.push(endpoint);
   };
 
-  if (isLogged) return <Redirect to={ `${routes[userData.role]}` } />;
+  if (isLogged) return <Redirect to={`${routes[userData.role]}`} />;
 
   return (
     <>
       <header
         className="w-full bg-flamingo-600"
       >
-        <img className="w-60 max-[640px]:mx-auto" src={ logo } alt="logo" />
+        <img className="w-60 max-[640px]:mx-auto" src={logo} alt="logo" />
       </header>
       <div className="flex items-center justify-around w-full min-h-screen">
         <div className="w-1/3 max-[640px]:hidden">
-          <img className="w-full" src={ takeaway } alt="take away gif" />
+          <img className="w-full" src={takeaway} alt="take away gif" />
         </div>
         <div
           className="flex flex-col justify-center items-center w-1/3
@@ -74,12 +79,12 @@ function Login() {
             Login
           </h1>
           <LoginForm
-            login={ login }
-            handleClick={ handleClick }
-            fields={ fields }
-            setFormFields={ setFormFields }
-            isValid={ isValid }
-            unauthorized={ unauthorized }
+            login={login}
+            handleClick={handleClick}
+            fields={fields}
+            setFormFields={setFormFields}
+            isValid={isValid}
+            unauthorized={unauthorized}
           />
         </div>
       </div>
