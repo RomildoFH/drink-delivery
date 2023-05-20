@@ -18,6 +18,8 @@ function Login() {
   const [fields, setFormFields] = useForm({
     email: 'zebirita@email.com',
     password: '$#zebirita#$',
+    name: '',
+    role: '',
   });
 
   const login = async (e) => {
