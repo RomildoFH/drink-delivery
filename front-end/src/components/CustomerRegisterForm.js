@@ -8,6 +8,10 @@ function CustomerRegisterForm({
   isValid,
   unauthorized,
 }) {
+  const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const nameLength = 12;
+  const passwordLength = 7;
+
   return (
     <form
       className="flex flex-col items-center justify-center
@@ -33,6 +37,11 @@ function CustomerRegisterForm({
           border-solid border border-black rounded bg-white"
         />
       </label>
+      {
+        !(fields.name && fields.name.length < nameLength) ? (
+          <p>Por favor, insira um nome com 12 ou mais caractéres</p>
+        ) : null
+      }
       <label
         htmlFor="email"
         className="w-5/6"
@@ -51,6 +60,11 @@ function CustomerRegisterForm({
           border-solid border border-black rounded bg-white"
         />
       </label>
+      {
+        !(fields.email && regex.test(fields.email)) ? (
+          <p>Por favor, insira um email válido</p>
+        ) : null
+      }
       <label
         htmlFor="password"
         className="w-5/6"
@@ -69,6 +83,11 @@ function CustomerRegisterForm({
           border-solid border border-black rounded bg-white"
         />
       </label>
+      {
+        !(fields.password && fields.password.length < passwordLength) ? (
+          <p>A senha deve ter 7 ou mais caractéres</p>
+        ) : null
+      }
       <button
         type="button"
         disabled={ !isValid }
