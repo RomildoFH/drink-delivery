@@ -33,10 +33,10 @@ https://drink-delivery.vercel.app/
 
 2. Cadastre sua conta, ou utilize algum dos dados de login abaixo:
 
-| Item |        Email           | Senha         |
-|------|-----------------------|---------------|
-|  1   | fulana@deliveryapp.com| fulana@123    |
-|  2   | zebirita@email.com     | &#35;zebirita&#35;&#36; |
+| Item |        Email           | Senha         | Role      |
+|------|-----------------------|---------------| ---------- |
+|  1   | fulana@deliveryapp.com| fulana@123    | seller     |
+|  2   | zebirita@email.com     | &#35;zebirita&#35;&#36; | customer     |
 
 
 
