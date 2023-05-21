@@ -8,7 +8,7 @@ function CustomerRegisterForm({
   isValid,
   unauthorized,
 }) {
-  const regex = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+  const regex = /^\w+([\\.-]?\w+)*@\w+([\\.-]?\w+)*(\.\w{2,3})+$/;
   const nameLength = 12;
   const passwordLength = 7;
 
