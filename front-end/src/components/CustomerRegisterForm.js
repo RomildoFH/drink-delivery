@@ -38,8 +38,12 @@ function CustomerRegisterForm({
         />
       </label>
       {
-        !(fields.name && fields.name.length < nameLength) ? (
-          <p>Por favor, insira um nome com 12 ou mais caractéres</p>
+        (fields.name && fields.name.length < nameLength) ? (
+          <p
+            className="text-xs text-flamingo-600"
+          >
+            Por favor, insira um nome com 12 ou mais caractéres
+          </p>
         ) : null
       }
       <label
@@ -61,8 +65,8 @@ function CustomerRegisterForm({
         />
       </label>
       {
-        !(fields.email && regex.test(fields.email)) ? (
-          <p>Por favor, insira um email válido</p>
+        (fields.email && !regex.test(fields.email)) ? (
+          <p className="text-xs text-flamingo-600">Por favor, insira um email válido</p>
         ) : null
       }
       <label
@@ -84,8 +88,12 @@ function CustomerRegisterForm({
         />
       </label>
       {
-        !(fields.password && fields.password.length < passwordLength) ? (
-          <p>A senha deve ter 7 ou mais caractéres</p>
+        (fields.password && fields.password.length < passwordLength) ? (
+          <p
+            className="text-xs text-flamingo-600"
+          >
+            A senha deve ter 7 ou mais caractéres
+          </p>
         ) : null
       }
       <button
